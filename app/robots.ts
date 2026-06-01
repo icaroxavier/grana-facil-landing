@@ -2,6 +2,9 @@ import type { MetadataRoute } from 'next'
 
 import { SITE } from '@/lib/site'
 
+// Necessário com `output: 'export'` — força geração em build time.
+export const dynamic = 'force-static'
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
