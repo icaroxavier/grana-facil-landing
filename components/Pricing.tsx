@@ -50,12 +50,13 @@ const plans = [
 const benefits = [
   'Lançamentos ilimitados',
   'Recorrências (mensal/anual)',
-  'Cartões + parcelamentos',
-  'Guardado e Devedores',
-  'Dashboard com gráficos',
+  'Faturas de cartão + parcelamentos',
+  'Reservar com cascata e projeção',
+  'Devedores',
+  'Dashboard com gráficos e ETA das metas',
   'Importação de extrato em CSV',
   'Alertas de pendências',
-  'Backup automático',
+  'Backup automático em nuvem',
 ]
 
 function formatBRL(cents: number) {

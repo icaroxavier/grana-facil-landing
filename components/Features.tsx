@@ -6,7 +6,9 @@ import {
   Bell,
   Upload,
   PiggyBank,
+  Target,
   Users,
+  ReceiptText,
 } from 'lucide-react'
 
 const features = [
@@ -21,29 +23,39 @@ const features = [
     desc: 'Aluguel, salário, Netflix… cadastre uma vez e o app gera os 12 meses (ou até quando quiser).',
   },
   {
+    icon: ReceiptText,
+    title: 'Faturas de cartão',
+    desc: 'Cada cartão tem fatura mensal projetada (soma das compras) ou manual. Confirma pagamento em 1 clique.',
+  },
+  {
     icon: CreditCard,
-    title: 'Cartões + parcelamento',
-    desc: 'Lance uma compra parcelada em N vezes e o app distribui automaticamente pelos meses certos.',
+    title: 'Parcelamento + anuidade',
+    desc: 'Compra parcelada vira N lançamentos automáticos. Anuidade do cartão sai do atalho em 5 segundos.',
+  },
+  {
+    icon: Target,
+    title: 'Reservar com regras inteligentes',
+    desc: 'Crie reservas com aporte fixo, % das entradas ou % da sobra. Cascata por prioridade quando enche uma meta.',
+  },
+  {
+    icon: PiggyBank,
+    title: 'Projeção + ETA da meta',
+    desc: 'Quando você atinge R$ 100k? E se aportar 25% a mais? O app mostra mês a mês.',
   },
   {
     icon: Bell,
     title: 'Alertas de pendência',
-    desc: 'Atrasados, vence hoje, próximos 7 dias. Nunca mais paga juros por esquecer.',
+    desc: 'Atrasados, vence hoje, próximos 7 dias. Lançamentos, faturas e aportes — tudo num lugar só.',
   },
   {
     icon: BarChart3,
     title: 'Dashboard com gráficos',
-    desc: 'KPIs do ano, evolução mensal, breakdown por categoria. Entenda pra onde sua grana vai.',
+    desc: 'KPIs do ano, evolução mensal, breakdown por categoria, resumo das reservas. Tudo em um clique.',
   },
   {
     icon: Upload,
     title: 'Importação CSV',
     desc: 'Cole o extrato do banco e categorize de uma vez. Sem digitar lançamento por lançamento.',
-  },
-  {
-    icon: PiggyBank,
-    title: 'Guardado (poupança)',
-    desc: 'Acompanhe metas de economia em separado, com projeção de quanto vai render.',
   },
   {
     icon: Users,
@@ -67,7 +79,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {features.map((f) => {
             const Icon = f.icon
             return (
