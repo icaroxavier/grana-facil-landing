@@ -12,7 +12,18 @@ export const SITE = {
   url: 'https://grana-facil.app',
   appUrl: 'https://grana-facil.vercel.app',
   loginUrl: 'https://grana-facil.vercel.app/login',
-  contactEmail: 'contato@grana-facil.app',
+  contactEmail: 'icarogabriel999@gmail.com',
+  contactPhoneDisplay: '(85) 99816-4001',
+  /**
+   * URL de WhatsApp com mensagem pré-preenchida. Trocar o número edita
+   * só este lugar; usado no SupportButton, no Footer e em qualquer CTA.
+   */
+  whatsappUrl(message?: string): string {
+    const text = encodeURIComponent(
+      message ?? 'Olá! Vim pelo Grana Fácil e tenho uma dúvida:'
+    )
+    return `https://wa.me/5585998164001?text=${text}`
+  },
   locale: 'pt_BR',
   themeColor: '#16a34a',
 }
