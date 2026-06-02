@@ -104,11 +104,11 @@ export default function RootLayout({
               description: SITE.longDescription,
               offers: {
                 '@type': 'Offer',
-                price: '20.00',
+                price: '19.90',
                 priceCurrency: 'BRL',
                 priceSpecification: {
                   '@type': 'UnitPriceSpecification',
-                  price: '20.00',
+                  price: '19.90',
                   priceCurrency: 'BRL',
                   unitText: 'MONTH',
                 },

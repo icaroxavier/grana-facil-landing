@@ -40,7 +40,7 @@ export function Hero() {
               </Link>
             </div>
             <p className="text-xs text-slate-500">
-              Sem cartão de crédito no cadastro. R$ 20/mês depois do trial.
+              Sem cartão de crédito no cadastro. A partir de R$ 14,99/mês no plano anual.
             </p>
           </div>
 
