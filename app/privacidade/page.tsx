@@ -7,7 +7,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Política de Privacidade',
   description:
-    'Política de Privacidade do Grana Fácil — em conformidade com a LGPD.',
+    'Política de Privacidade do Sua Grana — em conformidade com a LGPD.',
   alternates: { canonical: '/privacidade' },
 }
 

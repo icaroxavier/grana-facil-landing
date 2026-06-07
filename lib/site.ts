@@ -3,16 +3,16 @@
  * robots, og-image, etc. Trocar só aqui pra propagar pra tudo.
  */
 export const SITE = {
-  name: 'Grana Fácil',
+  name: 'Sua Grana',
   tagline: 'Substitua sua planilha. Controle sua grana em minutos.',
   shortDescription:
     'App de finanças pessoais que projeta o ano todo, gerencia faturas de cartão, automatiza suas reservas e mostra o que sobra. A partir de R$ 14,99/mês com 7 dias grátis.',
   longDescription:
-    'O Grana Fácil substitui sua planilha anual de gastos. Projete custos e entradas mês a mês, confirme valores reais quando souber, e veja o que sobra. Recorrências automáticas, faturas de cartão com parcelamento, reservas inteligentes (aporte fixo ou % da sobra) com projeção de meta, alertas de pendências, dashboard, importação CSV e muito mais. 7 dias grátis pra testar.',
-  url: 'https://grana-facil.app',
-  appUrl: 'https://grana-facil.vercel.app',
-  loginUrl: 'https://grana-facil.vercel.app/login',
-  contactEmail: 'icarogabriel999@gmail.com',
+    'O Sua Grana substitui sua planilha anual de gastos. Projete custos e entradas mês a mês, confirme valores reais quando souber, e veja o que sobra. Recorrências automáticas, faturas de cartão com parcelamento, reservas inteligentes (aporte fixo ou % da sobra) com projeção de meta, alertas de pendências, dashboard, importação CSV e muito mais. 7 dias grátis pra testar.',
+  url: 'https://suagrana.com',
+  appUrl: 'https://app.suagrana.com',
+  loginUrl: 'https://app.suagrana.com/login',
+  contactEmail: 'contato@suagrana.com',
   contactPhoneDisplay: '(85) 99816-4001',
   /**
    * URL de WhatsApp com mensagem pré-preenchida. Trocar o número edita
@@ -20,7 +20,7 @@ export const SITE = {
    */
   whatsappUrl(message?: string): string {
     const text = encodeURIComponent(
-      message ?? 'Olá! Vim pelo Grana Fácil e tenho uma dúvida:'
+      message ?? 'Olá! Vim pelo Sua Grana e tenho uma dúvida:'
     )
     return `https://wa.me/5585998164001?text=${text}`
   },

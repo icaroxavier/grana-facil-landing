@@ -16,7 +16,7 @@ import { SITE } from '@/lib/site'
  * Botão flutuante de suporte (canto inferior direito). Clique → popover
  * explicando os 4 tipos de coisa que o suporte cobre + CTA verde abrindo
  * conversa no WhatsApp com mensagem pré-preenchida apontando que veio
- * do Grana Fácil.
+ * do Sua Grana.
  *
  * Versão da landing (Next, App Router) — usa estado nativo em vez de
  * componentes shadcn pra evitar carregar dependências pesadas.

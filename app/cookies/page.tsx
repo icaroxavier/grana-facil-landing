@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Política de Cookies',
-  description: 'Como o Grana Fácil usa cookies e tecnologias similares.',
+  description: 'Como o Sua Grana usa cookies e tecnologias similares.',
   alternates: { canonical: '/cookies' },
 }
 

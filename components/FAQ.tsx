@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'Por que pagar se eu já tenho uma planilha?',
-    a: 'Planilha quebra com fórmula errada, não te avisa do que tá pra vencer, não importa CSV automaticamente, não tem dashboard. O Grana Fácil resolve essas dores e te economiza horas por mês. A partir de R$ 14,99/mês no plano anual — o preço de um café por semana.',
+    a: 'Planilha quebra com fórmula errada, não te avisa do que tá pra vencer, não importa CSV automaticamente, não tem dashboard. O Sua Grana resolve essas dores e te economiza horas por mês. A partir de R$ 14,99/mês no plano anual — o preço de um café por semana.',
   },
 ]
 

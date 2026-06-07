@@ -20,7 +20,7 @@ export function Hero() {
               minutos.
             </h1>
             <p className="max-w-xl text-balance text-lg text-slate-600">
-              O Grana Fácil projeta o ano todo de uma vez, te avisa o que vai
+              O Sua Grana projeta o ano todo de uma vez, te avisa o que vai
               vencer e mostra quanto sobra mês a mês. Sem planilha. Sem fórmula
               quebrada. Sem surpresa no fim do mês.
             </p>
@@ -52,7 +52,7 @@ export function Hero() {
                 <span className="h-2 w-2 rounded-full bg-yellow-400" />
                 <span className="h-2 w-2 rounded-full bg-emerald-400" />
                 <span className="ml-3 text-[10px] text-slate-500">
-                  grana-facil.vercel.app
+                  app.suagrana.com
                 </span>
               </div>
               <div className="grid grid-cols-13 gap-px bg-slate-200 p-2 text-[10px] tabular-nums">

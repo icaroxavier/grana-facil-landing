@@ -1,4 +1,4 @@
-# Grana Fácil — Landing
+# Sua Grana — Landing
 
 Landing page de marketing pro [app principal](https://github.com/icaroxavier/grana). Construída em Next.js 15 (App Router) + Tailwind + Vercel Analytics/Speed Insights, com SEO completo (metadata, sitemap, robots, JSON-LD, OG).
 
@@ -40,7 +40,7 @@ npm run dev   # http://localhost:3000
 2. Vercel → Import Project → conectar repo.
 3. Sem env vars necessárias (`SITE` em `lib/site.ts` é estático).
 4. Ligar **Analytics** e **Speed Insights** no painel do projeto.
-5. Apontar o domínio final (ex.: `grana-facil.app`) no Vercel.
+5. Apontar o domínio final (`suagrana.com` pra landing, `app.suagrana.com` pro app) no Vercel.
 
 ## Estrutura
 

@@ -6,7 +6,7 @@ import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Termos de Uso',
-  description: 'Termos de uso do Grana Fácil.',
+  description: 'Termos de uso do Sua Grana.',
   alternates: { canonical: '/termos' },
 }
 
@@ -36,7 +36,7 @@ export default function Page() {
           <section>
             <h2 className="mt-6 text-lg font-bold">2. Descrição do serviço</h2>
             <p>
-              O Grana Fácil é uma ferramenta web pra controle financeiro
+              O Sua Grana é uma ferramenta web pra controle financeiro
               pessoal. Não somos consultores financeiros, banco, corretora
               nem instituição autorizada pelo Banco Central. As informações
               que você insere são para seu próprio uso e organização.
@@ -91,7 +91,7 @@ export default function Page() {
           <section>
             <h2 className="mt-6 text-lg font-bold">7. Propriedade intelectual</h2>
             <p>
-              O nome, logo, design e código do Grana Fácil são nossos. Os
+              O nome, logo, design e código do Sua Grana são nossos. Os
               <strong> dados financeiros</strong> que você insere{' '}
               <strong>são seus</strong> — você é o titular e pode exportá-los
               ou solicitar exclusão a qualquer momento.
