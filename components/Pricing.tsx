@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Check, Crown, Sparkles } from 'lucide-react'
+import { Check, Crown, Sparkles, ShieldCheck } from 'lucide-react'
 
 import { SITE } from '@/lib/site'
 
@@ -167,6 +167,25 @@ export function Pricing() {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Selo de garantia — fecha a venda emocionalmente */}
+        <div className="mx-auto mt-8 max-w-3xl rounded-2xl border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-6 sm:p-8">
+          <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left">
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-100 ring-4 ring-emerald-50">
+              <ShieldCheck className="h-8 w-8 text-emerald-700" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-slate-900">
+                Garantia incondicional de 7 dias
+              </h3>
+              <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                Pagou e não gostou? Você tem <strong>7 dias</strong> pra pedir reembolso
+                integral via email — sem perguntas, sem complicação. É a lei do
+                consumidor brasileiro (Art. 49 CDC) e a gente respeita à risca.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

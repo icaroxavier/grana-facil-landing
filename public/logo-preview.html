@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logo preview</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #ffffff; overflow: hidden; }
+    .frame { width: 1080px; height: 1080px; }
+    img { display: block; width: 1080px; height: 1080px; }
+  </style>
+</head>
+<body>
+  <div class="frame" id="frame">
+    <img id="logo" src="logo-1080.svg" alt="Sua Grana logo">
+  </div>
+  <script>
+    // Permite trocar entre as duas versões via ?v=clean ou ?v=full
+    const v = new URLSearchParams(location.search).get('v') || 'full';
+    document.getElementById('logo').src =
+      v === 'clean' ? 'logo-1080-clean.svg' : 'logo-1080.svg';
+  </script>
+</body>
+</html>

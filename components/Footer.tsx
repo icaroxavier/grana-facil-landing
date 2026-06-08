@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { Instagram } from 'lucide-react'
 
 import { SITE } from '@/lib/site'
+import { Logo } from '@/components/Logo'
 
 export function Footer() {
   return (
@@ -8,15 +10,19 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-md bg-income text-sm font-extrabold text-white">
-                G
-              </div>
-              <span className="text-sm font-bold">{SITE.name}</span>
-            </div>
+            <Logo size="sm" />
             <p className="mt-3 text-xs text-slate-500">
               Controle financeiro pessoal feito no Brasil.
             </p>
+            <a
+              href={SITE.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 hover:text-emerald-700"
+              title={`Instagram @${SITE.instagramHandle}`}
+            >
+              <Instagram className="h-4 w-4" />@{SITE.instagramHandle}
+            </a>
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
