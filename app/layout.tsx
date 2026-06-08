@@ -63,6 +63,11 @@ export const metadata: Metadata = {
     icon: '/favicon.svg',
     apple: '/favicon.svg',
   },
+  // Verificação de domínio Meta Business — destrava Aggregated Event
+  // Measurement (iOS 14+ ATT). Token gerado em Business Settings → Domínios.
+  other: {
+    'facebook-domain-verification': 'aw2zqc6svnv93g4url9t1jdcigrtwq',
+  },
   robots: {
     index: true,
     follow: true,
