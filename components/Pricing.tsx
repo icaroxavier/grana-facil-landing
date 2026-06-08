@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import { Check, Crown, Sparkles, ShieldCheck } from 'lucide-react'
 
 import { SITE } from '@/lib/site'
+import { trackLeadCTA } from '@/lib/metaPixel'
 
 const plans = [
   {
@@ -141,6 +144,7 @@ export function Pricing() {
 
                 <Link
                   href={SITE.loginUrl}
+                  onClick={() => trackLeadCTA(`pricing_${plan.id}`)}
                   className={`mt-6 inline-flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors ${
                     plan.highlighted
                       ? 'bg-income text-white hover:bg-emerald-700'

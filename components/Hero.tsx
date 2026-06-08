@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import { ArrowRight, ShieldCheck, Zap, Lock } from 'lucide-react'
 
 import { SITE } from '@/lib/site'
+import { trackLeadCTA } from '@/lib/metaPixel'
 
 /**
  * Hero da landing — funil de vendas clássico:
@@ -38,6 +41,7 @@ export function Hero() {
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href={SITE.loginUrl}
+                onClick={() => trackLeadCTA('hero')}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-income px-6 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-emerald-700 hover:shadow-lg"
               >
                 Ver meu ano em 5 minutos

@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import { ArrowRight, ShieldCheck, Clock } from 'lucide-react'
 
 import { SITE } from '@/lib/site'
+import { trackLeadCTA } from '@/lib/metaPixel'
 
 /**
  * CTA final — urgência sutil (não falsa) baseada no calendário real do user:
@@ -31,6 +34,7 @@ export function FinalCTA() {
 
         <Link
           href={SITE.loginUrl}
+          onClick={() => trackLeadCTA('final_cta')}
           className="mt-8 inline-flex items-center justify-center gap-2 rounded-lg bg-income px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-emerald-200/50 transition-all hover:bg-emerald-700 hover:shadow-xl"
         >
           Criar minha conta grátis

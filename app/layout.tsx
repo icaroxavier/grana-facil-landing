@@ -3,6 +3,8 @@ import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { SupportButton } from '@/components/SupportButton'
+import { MetaPixel } from '@/components/MetaPixel'
+import { CookieBanner } from '@/components/CookieBanner'
 import { SITE } from '@/lib/site'
 import './globals.css'
 
@@ -90,6 +92,8 @@ export default function RootLayout({
       <body>
         {children}
         <SupportButton />
+        <MetaPixel />
+        <CookieBanner />
         <Analytics />
         <SpeedInsights />
         {/* JSON-LD: structured data pra Google entender o produto e mostrar
